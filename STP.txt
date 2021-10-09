@@ -1,0 +1,37 @@
+問1
+ルートブリッジ
+Switch3
+
+問2
+・Switch1
+F0/1 DP
+ルートポートの対向ポートになっているため
+
+F0/2 RP
+ルートブリッジまでのポートコストの総和が小さいため
+Switch3-Switch1 コスト100
+Switch3-Switch4-Switch2-Switch1 コスト219
+
+・Switch2
+F0/1 RP
+ルートブリッジまでのポートコストの総和が小さいため
+Switch3-Switch1-Switch2 コスト119
+Switch3-Switch4-Switch2 コスト200
+
+F0/2 BP
+ルートポート、指定ポートのどちらにも選出されなかったポートのため
+
+・Switch3
+E0/1 DP
+E0/1 DP
+ルートブリッジの全てのポートは指定ポートになるため
+
+・Switch4
+E0/1 DP
+対向ポートに何も役割がないのでブリッジIDが小さい方が指定ポートになるため
+
+E0/2 RP
+ルートブリッジまでのポートコストの総和が小さいため　
+Switch3-Switch4 コスト100
+Switch3-Switch1-Switch2-Switch4 コスト219
+
